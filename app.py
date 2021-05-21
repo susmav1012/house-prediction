@@ -20,7 +20,7 @@ def create_task():
     request_data = request.get_json()
     for feature in features_list:
         data.update({feature: request_data[feature]})
-    prediction = predict(request.json)
+    prediction = predict(data)
     return jsonify({'done': True, 'prediction': prediction[0]}), 201
 
 

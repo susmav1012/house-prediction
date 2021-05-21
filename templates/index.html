@@ -5,50 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/winstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/winstrap-optional.min.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/reset.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/winstrap.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/winstrap-optional.min.css') }}"
+    />
     <title>House Price Predictions</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-5">
-          <div class="sidenav-item make-me-sticky">
-            <a class="btn btn-lightweight no-outline navigation-btn"
-              >Feature Categories</a
-            >
-            <nav
-              role="navigation"
-              id="sidenav"
-              class="nav side-navigation side-navigation-large theme-default"
-            >
-              <div class="navigation-label">Feature Categories</div>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="side-navigation"
-                aria-label="close"
-              >
-                <i class="glyph glyph-cancel"></i>
-              </button>
-              <ul>
-                <li><a class="nav-item-1" href="#">General</a></li>
-                <li>
-                  <a class="nav-item-2 active" href="#">Construction</a>
-                </li>
-                <li><a class="nav-item-3" href="#">Bedroom</a></li>
-                <li><a class="nav-item-4" href="#">Basement</a></li>
-                <li>
-                  <a class="nav-item-5" href="#">Garage</a>
-                </li>
-              </ul>
-            </nav>
-            <div id="results">
-            </div>
-          </div>
-        </div>
+        <div class="col-md-5">{% include 'nav.html' %}</div>
         <div class="col-md-19">
           <div class="content">
             <div class="container-fluid">
@@ -80,9 +58,7 @@
               </div>
               <div class="container-fluid second">
                 <div class="row">
-                  <div class="col-md-24">
-                    {% include 'form.html' %}
-                  </div>
+                  <div class="col-md-24">{% include 'form.html' %}</div>
                 </div>
               </div>
             </div>

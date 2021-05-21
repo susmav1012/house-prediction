@@ -654,7 +654,7 @@ feature_form_structure = {
             }
         },
     ],
-    'Utilities': [
+    'Utility': [
         {
             'Label': 'Heating',
             'Data' : {
