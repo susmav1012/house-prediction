@@ -2,7 +2,7 @@
 
 {% for key in feature_form_structure %}
 
-    <div id="{{ key }}" class="type-h3">{{ key }}</div>
+    <div id="{{ key }}_id" class="type-h3">{{ key }}</div>
 
     {% for feature in feature_form_structure[key] %}
 
@@ -122,6 +122,10 @@
     {% endfor %}
 
 {% endfor %}
+
+    <div class="form-group">
+        <div id="results"></div>    
+    </div>
 
     <div class="form-group">
         <div class="btn-group">
